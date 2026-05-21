@@ -857,6 +857,96 @@
         <p>Looking for an apartment, condo, townhouse, or co-op? We have an extensive database of Elmont rentals and a dedicated team to find your perfect fit.</p>
         <a href="#rental-form" class="service-link">Browse Rentals →</a>
       </div>
+      <section class="spr-form-section" id="rental-form">
+  <div class="spr-form-wrap">
+    <span class="spr-form-badge">Rentals</span>
+    <h2 class="spr-form-title">Find a Rental in Elmont</h2>
+    <p class="spr-form-subtitle">We have an extensive database of apartments, condos, and co-ops. Tell us what you need and we'll find your match.</p>
+
+    <form name="rental-inquiry" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="rental-inquiry">
+
+      <div class="spr-field-row">
+        <div class="spr-field">
+          <label for="rent-first">First Name</label>
+          <input type="text" id="rent-first" name="first_name" placeholder="Sydney" required>
+        </div>
+        <div class="spr-field">
+          <label for="rent-last">Last Name</label>
+          <input type="text" id="rent-last" name="last_name" placeholder="Smith" required>
+        </div>
+      </div>
+
+      <div class="spr-field">
+        <label for="rent-email">Email Address</label>
+        <input type="email" id="rent-email" name="email" placeholder="you@email.com" required>
+      </div>
+
+      <div class="spr-field">
+        <label for="rent-phone">Phone Number</label>
+        <input type="tel" id="rent-phone" name="phone" placeholder="(516) 555-0100" required>
+      </div>
+
+      <div class="spr-field-row">
+        <div class="spr-field">
+          <label for="rent-type">Property Type</label>
+          <select id="rent-type" name="property_type">
+            <option value="" disabled selected>Select one…</option>
+            <option>Apartment</option>
+            <option>Condo</option>
+            <option>Townhouse</option>
+            <option>Co-op</option>
+            <option>House</option>
+          </select>
+        </div>
+        <div class="spr-field">
+          <label for="rent-beds">Bedrooms</label>
+          <select id="rent-beds" name="bedrooms">
+            <option value="" disabled selected>Select one…</option>
+            <option>Studio</option>
+            <option>1 Bedroom</option>
+            <option>2 Bedrooms</option>
+            <option>3 Bedrooms</option>
+            <option>4+ Bedrooms</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="spr-field-row">
+        <div class="spr-field">
+          <label for="rent-budget">Monthly Budget</label>
+          <select id="rent-budget" name="budget" required>
+            <option value="" disabled selected>Select one…</option>
+            <option>Under $1,500</option>
+            <option>$1,500 – $2,000</option>
+            <option>$2,000 – $2,500</option>
+            <option>$2,500 – $3,500</option>
+            <option>Over $3,500</option>
+          </select>
+        </div>
+        <div class="spr-field">
+          <label for="rent-movein">Move-in Date</label>
+          <input type="month" id="rent-movein" name="move_in_date">
+        </div>
+      </div>
+
+      <div class="spr-field">
+        <label for="rent-notes">Anything else? (optional)</label>
+        <textarea id="rent-notes" name="notes" placeholder="Pets, parking needs, neighborhoods you prefer…"></textarea>
+      </div>
+
+      <div data-netlify-honeypot="bot-field" style="display:none">
+        <input name="bot-field">
+      </div>
+
+      <button type="submit" class="spr-submit">Find My Rental &rarr;</button>
+    </form>
+
+    <p class="spr-form-footer">Sawyers Premier Realty &bull; (516) 216-1394 &bull; Elmont, NY<br>We never share your information.</p>
+  </div>
+</section>
+
+
       <div class="service-card reveal reveal-delay-1">
         <span class="service-icon">🏢</span>
         <h3>Commercial Properties</h3>
