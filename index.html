@@ -1093,119 +1093,98 @@
 </section>
 
 <!-- NOTARY APPOINTMENT FORM -->
-<section class="notary-form-section" id="notary-form">
-  <div class="notary-form-inner">
-    <div class="notary-form-left reveal">
-      <div class="section-eyebrow" style="color: var(--gold);">Lead Generation Engine</div>
-      <h2>Book Your <em>Notary Appointment</em> — It's Fast &amp; Easy</h2>
-      <p>We'll notarize your documents and you'll discover why Elmont trusts Sawyers Premier Realty for all their property needs. One visit. Two problems solved.</p>
-      <div class="why-notary">
-        <div class="why-item">
-          <div class="why-num">01</div>
-          <div class="why-text">
-            <div class="why-title">Fast &amp; Accurate Service</div>
-            <div class="why-desc">All documents notarized to meet legal requirements — no delays, no errors.</div>
-          </div>
+<section class="spr-form-section" id="notary-form">
+  <div class="spr-form-wrap">
+    <span class="spr-form-badge">Certified Notary Public</span>
+    <h2 class="spr-form-title">Book a Notary Appointment</h2>
+    <p class="spr-form-subtitle">Available 7 days a week, 10am–7pm. In-office at 1389 Hempstead Tpke, Elmont — or ask about mobile notary.</p>
+
+    <form name="notary-booking" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="notary-booking">
+
+      <div class="spr-field-row">
+        <div class="spr-field">
+          <label for="not-first">First Name</label>
+          <input type="text" id="not-first" name="first_name" placeholder="Sydney" required>
         </div>
-        <div class="why-item">
-          <div class="why-num">02</div>
-          <div class="why-text">
-            <div class="why-title">Flexible Scheduling</div>
-            <div class="why-desc">We're open 7 days a week, 10am–7pm, to fit your busy schedule.</div>
-          </div>
-        </div>
-        <div class="why-item">
-          <div class="why-num">03</div>
-          <div class="why-text">
-            <div class="why-title">Rare in Elmont</div>
-            <div class="why-desc">Finding a certified notary public in Elmont isn't easy — we're one of the very few.</div>
-          </div>
-        </div>
-        <div class="why-item">
-          <div class="why-num">04</div>
-          <div class="why-text">
-            <div class="why-title">Real Estate Expertise On-Site</div>
-            <div class="why-desc">While you're here, speak with a licensed broker about buying, selling, or renting.</div>
-          </div>
+        <div class="spr-field">
+          <label for="not-last">Last Name</label>
+          <input type="text" id="not-last" name="last_name" placeholder="Smith" required>
         </div>
       </div>
-    </div>
-    <div class="notary-form reveal reveal-delay-2">
-      <h3>Request Your Appointment</h3>
-      <p class="form-sub">We'll follow up within 1 business day to confirm your time.</p>
-      <form name="notary-appointment" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/thank-you">
-        <input type="hidden" name="form-name" value="notary-appointment">
-        <p style="display:none;"><label>Don't fill this out: <input name="bot-field"></label></p>
-        <div class="form-row">
-          <div class="form-group">
-            <label for="fname">First Name</label>
-            <input type="text" name="first-name" placeholder="John" id="fname" required>
-          </div>
-          <div class="form-group">
-            <label for="lname">Last Name</label>
-            <input type="text" name="last-name" placeholder="Doe" id="lname" required>
-          </div>
+
+      <div class="spr-field">
+        <label for="not-email">Email Address</label>
+        <input type="email" id="not-email" name="email" placeholder="you@email.com" required>
+      </div>
+
+      <div class="spr-field">
+        <label for="not-phone">Phone Number</label>
+        <input type="tel" id="not-phone" name="phone" placeholder="(516) 555-0100" required>
+      </div>
+
+      <div class="spr-field">
+        <label for="not-doc">Document Type</label>
+        <select id="not-doc" name="document_type" required>
+          <option value="" disabled selected>Select one…</option>
+          <option>Real Estate Deed / Title</option>
+          <option>Mortgage Document</option>
+          <option>Power of Attorney</option>
+          <option>Affidavit / Oath</option>
+          <option>Business Contract</option>
+          <option>Auto Title Transfer</option>
+          <option>Other / Not Sure</option>
+        </select>
+      </div>
+
+      <div class="spr-field-row">
+        <div class="spr-field">
+          <label for="not-date">Preferred Date</label>
+          <input type="date" id="not-date" name="preferred_date" required>
         </div>
-        <div class="form-row">
-          <div class="form-group">
-            <label for="phone">Phone Number</label>
-            <input type="tel" name="phone" placeholder="(516) 555-0100" id="phone" required>
-          </div>
-          <div class="form-group">
-            <label for="email">Email Address</label>
-            <input type="email" name="email" placeholder="john@email.com" id="email" required>
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="doc-type">Document Type</label>
-          <select name="document-type" id="doc-type" required>
-            <option value="">Select document type...</option>
-            <option>Deed / Title Transfer</option>
-            <option>Mortgage Document</option>
-            <option>Power of Attorney</option>
-            <option>Affidavit / Oath</option>
-            <option>Business Contract</option>
-            <option>Lease Agreement</option>
-            <option>Auto Title Transfer</option>
-            <option>Will / Trust</option>
-            <option>Other</option>
+        <div class="spr-field">
+          <label for="not-time">Preferred Time</label>
+          <select id="not-time" name="preferred_time" required>
+            <option value="" disabled selected>Select one…</option>
+            <option>10:00 AM</option>
+            <option>11:00 AM</option>
+            <option>12:00 PM</option>
+            <option>1:00 PM</option>
+            <option>2:00 PM</option>
+            <option>3:00 PM</option>
+            <option>4:00 PM</option>
+            <option>5:00 PM</option>
+            <option>6:00 PM</option>
+            <option>7:00 PM</option>
           </select>
         </div>
-        <div class="form-row">
-          <div class="form-group">
-            <label for="pref-date">Preferred Date</label>
-            <input type="date" name="preferred-date" id="pref-date">
-          </div>
-          <div class="form-group">
-            <label for="pref-time">Preferred Time</label>
-            <select name="preferred-time" id="pref-time">
-              <option value="">Select time...</option>
-              <option>10:00 AM</option>
-              <option>11:00 AM</option>
-              <option>12:00 PM</option>
-              <option>1:00 PM</option>
-              <option>2:00 PM</option>
-              <option>3:00 PM</option>
-              <option>4:00 PM</option>
-              <option>5:00 PM</option>
-              <option>6:00 PM</option>
-            </select>
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="notes">Additional Notes</label>
-          <textarea name="notes" placeholder="Any details about your documents or questions for our team..." id="notes"></textarea>
-        </div>
-        <div class="checkbox-group">
-          <input type="checkbox" name="real-estate-interest" id="re-interest" value="Yes - Interested in Real Estate Services">
-          <label for="re-interest"><strong>I'm also interested in buying, selling, or renting a property</strong> — Please have a real estate agent follow up with me as well.</label>
-        </div>
-        <button type="submit" class="form-submit">Confirm My Notary Appointment ✓</button>
-        <p class="form-note">Serving Elmont, Valley Stream, Hempstead, Jamaica, Floral Park &amp; surrounding Nassau County</p>
-      </form>
-    </div>
+      </div>
+
+      <div class="spr-field">
+        <label for="not-location">Appointment Location</label>
+        <select id="not-location" name="location">
+          <option value="" disabled selected>Select one…</option>
+          <option>In-office (1389 Hempstead Tpke, Elmont)</option>
+          <option>Mobile — come to me (additional fee may apply)</option>
+        </select>
+      </div>
+
+      <div class="spr-field">
+        <label for="not-notes">Additional Details (optional)</label>
+        <textarea id="not-notes" name="notes" placeholder="Number of documents, any special requirements…"></textarea>
+      </div>
+
+      <div data-netlify-honeypot="bot-field" style="display:none">
+        <input name="bot-field">
+      </div>
+
+      <button type="submit" class="spr-submit gold">Book My Appointment &rarr;</button>
+    </form>
+
+    <p class="spr-form-footer">We'll confirm your appointment by phone or email within a few hours.<br>Questions? Call (516) 216-1394</p>
   </div>
 </section>
+
 
 <!-- SEO NOTARY DOCS -->
 <section class="docs-section">
