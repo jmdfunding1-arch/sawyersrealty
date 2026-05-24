@@ -190,8 +190,9 @@
 
   /* ── SERVICES ── */
   .services-section { background: var(--cream); }
-  .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+  .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; align-items: start; }
   .service-card {
+    align-self: start;
     background: var(--white); border-radius: 12px; padding: 32px 28px;
     border: 1px solid var(--cream-dark);
     transition: all 0.3s; position: relative; overflow: hidden;
