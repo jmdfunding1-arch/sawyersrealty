@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Showing Requested | Sawyers Premier Realty</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{--navy:#0d1f2d;--gold:#c9a84c;--gold-light:#e2c07a;--cream:#f7f4ef;--white:#ffffff;--text:#2a2a2a;--muted:#777}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text);min-height:100vh;display:flex;flex-direction:column}
+  .topbar{background:var(--navy);padding:12px 32px;display:flex;justify-content:space-between;align-items:center}
+  .topbar-logo{font-family:'Cormorant Garamond',serif;font-size:18px;color:var(--white);text-decoration:none;letter-spacing:.04em}
+  .topbar-logo span{color:var(--gold)}
+  .topbar-phone{color:rgba(255,255,255,.7);font-size:13px;text-decoration:none;transition:color .2s}
+  .topbar-phone:hover{color:var(--gold)}
+
+  .wrap{flex:1;display:flex;align-items:center;justify-content:center;padding:60px 24px}
+  .card{background:var(--white);max-width:540px;width:100%;border-radius:10px;padding:56px 48px;text-align:center;box-shadow:0 20px 60px rgba(13,31,45,.08)}
+  .check{width:64px;height:64px;background:var(--navy);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 28px;position:relative}
+  .check svg{width:28px;height:28px}
+  .badge{display:inline-block;background:rgba(201,168,76,.12);border:1px solid rgba(201,168,76,.3);color:var(--gold);font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;padding:5px 14px;border-radius:2px;margin-bottom:18px}
+  h1{font-family:'Cormorant Garamond',serif;font-size:36px;font-weight:400;color:var(--navy);line-height:1.15;margin-bottom:16px}
+  h1 em{font-style:italic;color:var(--gold)}
+  p{font-size:15px;color:var(--muted);line-height:1.7;margin-bottom:8px;font-weight:300}
+  .lead{font-size:16px;color:var(--text);margin-bottom:28px}
+
+  .what-next{background:var(--cream);border-radius:8px;padding:24px 26px;text-align:left;margin:28px 0;display:flex;flex-direction:column;gap:14px}
+  .what-next-item{display:flex;gap:12px;align-items:flex-start}
+  .what-next-num{width:24px;height:24px;background:var(--navy);color:var(--gold);font-family:'Cormorant Garamond',serif;font-size:13px;font-weight:600;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
+  .what-next-text{font-size:13.5px;color:var(--text);line-height:1.6}
+  .what-next-text strong{color:var(--navy)}
+
+  .call-strip{margin-top:8px;padding:18px;background:var(--navy);border-radius:6px;text-align:center}
+  .call-strip a{color:var(--gold);font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:600;text-decoration:none}
+  .call-strip .lbl{color:rgba(255,255,255,.5);font-size:11px;text-transform:uppercase;letter-spacing:.08em;margin-top:4px}
+
+  .btn-back{display:inline-block;margin-top:28px;background:var(--gold);color:var(--navy);font-size:13px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:13px 28px;border-radius:3px;text-decoration:none;transition:background .2s}
+  .btn-back:hover{background:var(--gold-light)}
+
+  footer{text-align:center;padding:24px;font-size:12px;color:var(--muted)}
+
+  @media (max-width:560px){
+    .card{padding:40px 26px}
+    h1{font-size:28px}
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <a href="https://sawyersrealty.com/" class="topbar-logo">Sawyers <span>Premier Realty</span></a>
+  <a href="tel:5162161394" class="topbar-phone">📞 (516) 216-1394</a>
+</div>
+
+<div class="wrap">
+  <div class="card">
+    <div class="check">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#c9a84c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="20 6 9 17 4 12"></polyline>
+      </svg>
+    </div>
+    <div class="badge">Request Received</div>
+    <h1>Thank You — Your Showing<br>Request Has Been <em>Sent</em></h1>
+    <p class="lead">We've received your inquiry for <strong>210-05 Hollis Avenue</strong>, Queens Village, NY.</p>
+
+    <div class="what-next">
+      <div class="what-next-item">
+        <div class="what-next-num">1</div>
+        <div class="what-next-text"><strong>We respond within 2 hours</strong> — Sydney or a member of our team will follow up to confirm your private showing.</div>
+      </div>
+      <div class="what-next-item">
+        <div class="what-next-num">2</div>
+        <div class="what-next-text"><strong>Your information stays confidential</strong> — this is an off-market listing, and we treat every inquiry with discretion.</div>
+      </div>
+      <div class="what-next-item">
+        <div class="what-next-num">3</div>
+        <div class="what-next-text"><strong>Have the financials ready</strong> — we'll send the full investment package, including rent roll and NOI breakdown, ahead of your visit.</div>
+      </div>
+    </div>
+
+    <div class="call-strip">
+      <a href="tel:5162161394">(516) 216-1394</a>
+      <div class="lbl">Prefer to talk now? Call us directly</div>
+    </div>
+
+    <a href="https://sawyersrealty.com/" class="btn-back">← Back to Sawyers Realty</a>
+  </div>
+</div>
+
+<footer>© 2025 Sawyers Premier Realty Inc. — Elmont, NY</footer>
+
+</body>
+</html>
