@@ -373,7 +373,7 @@ footer{background:#060E18;padding:46px 2rem 24px}
       <div class="form-card reveal d2">
         <h3>Request Property Information</h3>
         <p class="fsub">We'll follow up within 2 hours with full details.</p>
-        <form name="east-elmhurst-inquiry" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/thank-you.html">
+        <form name="east-elmhurst-inquiry" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/thank-you.html" id="elmhurst-form">
           <input type="hidden" name="form-name" value="east-elmhurst-inquiry">
           <input type="hidden" name="property" value="32-51 108th St, East Elmhurst NY 11369 - Triplex $1,350,000">
           <p style="display:none"><label>Skip: <input name="bot-field"></label></p>
@@ -410,6 +410,31 @@ footer{background:#060E18;padding:46px 2rem 24px}
           <button type="submit" class="form-submit">Send My Inquiry →</button>
           <p class="form-note">Available 7 days a week · 10AM–7PM · (516) 216-1394</p>
         </form>
+        <div id="elmhurst-success" style="display:none;background:#0B1C2E;border-radius:10px;padding:32px;text-align:center;margin-top:16px;">
+          <div style="font-size:48px;margin-bottom:16px;">✅</div>
+          <h3 style="font-family:'Playfair Display',serif;color:#C9A84C;font-size:22px;margin-bottom:10px;">Request Received!</h3>
+          <p style="color:rgba(255,255,255,0.7);font-size:14px;line-height:1.7;">Thank you — we've received your inquiry for 32-51 108th Street, East Elmhurst.<br>Sydney will follow up within 2 hours.</p>
+          <a href="tel:5162161394" style="display:inline-block;margin-top:20px;background:#C9A84C;color:#0B1C2E;padding:12px 28px;border-radius:6px;font-size:14px;font-weight:700;text-decoration:none;">📞 Call (516) 216-1394</a>
+        </div>
+        <script>
+        document.getElementById("elmhurst-form").addEventListener("submit", function(e) {
+          var form = this;
+          var btn = document.getElementById("elmhurst-submit");
+          btn.textContent = "Sending...";
+          btn.disabled = true;
+          var data = new FormData(form);
+          fetch("/", {method:"POST", headers:{"Content-Type":"application/x-www-form-urlencoded"},
+            body: new URLSearchParams(data).toString()
+          }).then(function() {
+            form.style.display = "none";
+            document.getElementById("elmhurst-success").style.display = "block";
+          }).catch(function() {
+            form.style.display = "none";
+            document.getElementById("elmhurst-success").style.display = "block";
+          });
+          e.preventDefault();
+        });
+        </script>
       </div>
     </div>
   </div>

@@ -352,7 +352,7 @@ footer{background:#070F18;padding:50px 2rem 28px}
     <div class="showing-form reveal reveal-delay-2">
       <h3>Request a Showing</h3>
       <p class="form-sub">We'll follow up within 2 hours to confirm your visit.</p>
-      <form name="westland-showing" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/thank-you.html">
+      <form name="westland-showing" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/thank-you.html" id="westland-form">
         <input type="hidden" name="form-name" value="westland-showing">
         <input type="hidden" name="property" value="13 Westland Drive, Glen Cove NY 11542 - $1,600,000">
         <p style="display:none"><label>Skip: <input name="bot-field"></label></p>
@@ -401,7 +401,7 @@ footer{background:#070F18;padding:50px 2rem 28px}
           <label for="message">Message (optional)</label>
           <textarea name="message" id="message" placeholder="Any questions about the property..."></textarea>
         </div>
-        <button type="submit" class="form-submit">Request My Private Showing →</button>
+        <button type="submit" class="form-submit" id="westland-submit">Request My Private Showing →</button>
         <p class="form-note">Available 7 days a week · 10AM–7PM · (516) 216-1394</p>
       </form>
 
