@@ -147,6 +147,23 @@ footer{background:#060E18;padding:46px 2rem 24px}
 </style>
 </head>
 <body>
+<form name="linden-blvd-inquiry" data-netlify="true" netlify-honeypot="bot-field" hidden><input type="text" name="full-name"><input type="email" name="email"><input type="tel" name="phone"><input type="text" name="property"><select name="buyer-type"><option>-</option></select><input type="date" name="preferred-date"><select name="preferred-time"><option>-</option></select><textarea name="message"></textarea><input type="text" name="bot-field"></form>
+
+
+<!-- NETLIFY FORM DETECTION - DO NOT REMOVE -->
+<form name="linden-blvd-inquiry" data-netlify="true" netlify-honeypot="bot-field" hidden>
+  <input type="text" name="full-name">
+  <input type="email" name="email">
+  <input type="tel" name="phone">
+  <input type="text" name="property">
+  <select name="buyer-type"><option>-</option></select>
+  <input type="date" name="preferred-date">
+  <select name="preferred-time"><option>-</option></select>
+  <textarea name="message"></textarea>
+  <input type="text" name="bot-field">
+</form>
+<!-- END NETLIFY FORM DETECTION -->
+
 
 <div class="topbar">
   <div class="topbar-inner">
@@ -328,7 +345,7 @@ footer{background:#060E18;padding:46px 2rem 24px}
         <p class="fsub">We respond within 2 hours, 7 days a week.</p>
         <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(window.submitted){document.getElementById('linden-form-wrap').style.display='none';document.getElementById('linden-success').style.display='block';}"></iframe>
         <div id="linden-form-wrap">
-        <form name="linden-blvd-inquiry" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/" target="hidden_iframe" onsubmit="window.submitted=true;">
+        <form name="linden-blvd-inquiry" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/linden-blvd.html" target="hidden_iframe" onsubmit="window.submitted=true;">
           <input type="hidden" name="form-name" value="linden-blvd-inquiry">
           <input type="hidden" name="property" value="233-19 Linden Blvd, Cambria Heights NY 11411 - Legal 2-Family $1,100,000">
           <p style="display:none"><label>Skip: <input name="bot-field"></label></p>
