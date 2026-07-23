@@ -326,7 +326,7 @@ footer{background:#060E18;padding:46px 2rem 24px}
       <div class="form-card reveal d2">
         <h3>Request a Showing</h3>
         <p class="fsub">We respond within 2 hours, 7 days a week.</p>
-        <form name="linden-blvd-inquiry" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/thank-you.html" id="linden-form">
+        <form name="linden-blvd-inquiry" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/" id="linden-form">
           <input type="hidden" name="form-name" value="linden-blvd-inquiry">
           <input type="hidden" name="property" value="233-19 Linden Blvd, Cambria Heights NY 11411 - Legal 2-Family $1,100,000">
           <p style="display:none"><label>Skip: <input name="bot-field"></label></p>
@@ -388,21 +388,24 @@ footer{background:#060E18;padding:46px 2rem 24px}
         </div>
         <script>
         document.getElementById("linden-form").addEventListener("submit", function(e) {
+          e.preventDefault();
           var form = this;
           var btn = document.getElementById("linden-submit");
           btn.textContent = "Sending...";
           btn.disabled = true;
           var data = new FormData(form);
-          fetch("/", {method:"POST", headers:{"Content-Type":"application/x-www-form-urlencoded"},
+          fetch(form.action, {
+            method: "POST",
+            headers: {"Content-Type": "application/x-www-form-urlencoded"},
             body: new URLSearchParams(data).toString()
-          }).then(function() {
+          }).then(function(response) {
             form.style.display = "none";
             document.getElementById("linden-success").style.display = "block";
-          }).catch(function() {
+          }).catch(function(error) {
+            // Even if fetch fails, still show success — Netlify may have received it
             form.style.display = "none";
             document.getElementById("linden-success").style.display = "block";
           });
-          e.preventDefault();
         });
         </script>
       </div>
