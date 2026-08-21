@@ -98,13 +98,19 @@
   .testimonial{background:#F8F3EB;text-align:center;}
   .testimonial blockquote{font-family:'Playfair Display',serif;font-style:italic;font-size:20px;color:#0B1C2E;max-width:700px;margin:0 auto 16px;line-height:1.5;}
   .testimonial cite{font-size:13px;color:#7A8A9A;font-style:normal;}
+  .testimonials-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;text-align:left;max-width:800px;margin:0 auto;}
+  .testimonial-card{background:#fff;border:1px solid #EDE5D4;border-radius:12px;padding:28px;}
+  .testimonial-card .stars{color:#C9A84C;font-size:14px;margin-bottom:12px;}
+  .testimonial-card blockquote{font-family:'Playfair Display',serif;font-style:italic;font-size:16px;color:#0B1C2E;margin-bottom:14px;line-height:1.6;}
+  .testimonial-card cite{font-size:13px;color:#7A8A9A;font-style:normal;display:block;}
+  .testimonial-card cite a{color:#9E7E34;text-decoration:underline;}
   .faq-item{border-bottom:1px solid #EDE5D4;padding:20px 0;}
   .faq-item h3{font-size:16px;margin-bottom:8px;}
   .faq-item p{font-size:14px;color:#7A8A9A;}
   footer{background:#0B1C2E;padding:36px 2rem;text-align:center;}
   footer a{color:#C9A84C;font-size:13px;}
   footer p{color:rgba(255,255,255,.4);font-size:12px;margin-top:10px;}
-  @media (max-width:800px){.book-grid,.why-grid{grid-template-columns:1fr;}.trust-inner{grid-template-columns:repeat(2,1fr);}.form-row{grid-template-columns:1fr;}}
+  @media (max-width:800px){.book-grid,.why-grid,.testimonials-grid{grid-template-columns:1fr;}.trust-inner{grid-template-columns:repeat(2,1fr);}.form-row{grid-template-columns:1fr;}}
 </style>
 </head>
 <body>
@@ -246,8 +252,20 @@
 
 <section class="testimonial">
   <div class="section-inner">
-    <blockquote>"I came in just for notary services on a power of attorney document — ended up working with Sydney on selling my house too! He's knowledgeable, professional, and genuinely cares about clients."</blockquote>
-    <cite>— Robert J., Notary Client → Home Seller, Elmont</cite>
+    <div class="section-eyebrow" style="text-align:center;">Real Client Reviews</div>
+    <h2 class="section-title" style="text-align:center;">What Notary Clients Say on Google</h2>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <blockquote>"Awesome service...The owner even went downstairs to assist me...because I couldn't climb up the stairs, its too steep for me...so he went down...signed my papers, then he stamped on it...its easy as 1-2-3...."</blockquote>
+        <cite>— Boyet S., <a href="https://www.google.com/maps/place/Sawyers+Realty/data=!4m7!3m6!1s0x89c263c64254ec07:0x51a6767a8779425d!8m2!3d40.7076401!4d-73.6918525!16s%2Fg%2F11x71hj3m6!19sChIJB-xUQsZjwokRXUJ5h3p2plE" target="_blank" rel="noopener">Google review</a></cite>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <blockquote>"Absolute legend, go get your stuff notarized here. Quick and easy"</blockquote>
+        <cite>— Joey U., <a href="https://www.google.com/maps/place/Sawyers+Realty/data=!4m7!3m6!1s0x89c263c64254ec07:0x51a6767a8779425d!8m2!3d40.7076401!4d-73.6918525!16s%2Fg%2F11x71hj3m6!19sChIJB-xUQsZjwokRXUJ5h3p2plE" target="_blank" rel="noopener">Google review</a></cite>
+      </div>
+    </div>
   </div>
 </section>
 
