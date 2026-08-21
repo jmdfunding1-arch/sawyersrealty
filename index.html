@@ -13,7 +13,13 @@
                #inquiry > div > div { grid-template-columns: 1fr !important; }
 #mortgage-calculator [style*="grid-template-columns:1fr 1fr"] { grid-template-columns: 1fr !important; }
           }
-          </style>
+          @media (max-width:900px){
+#hv-grid{grid-template-columns:1fr !important;gap:40px !important;}
+}
+@media (max-width:640px){
+#hv-form-row{grid-template-columns:1fr !important;}
+}
+</style>
       <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -1111,7 +1117,7 @@
 
 <!-- HOME VALUE SECTION -->
 <section id="home-value" style="background:#0B1C2E;padding:90px 2rem;">
-  <div style="max-width:1280px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;">
+  <div id="hv-grid" style="max-width:1280px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;">
     <div>
       <div style="font-size:11px;text-transform:uppercase;letter-spacing:.14em;color:#C9A84C;font-weight:600;margin-bottom:12px;display:flex;align-items:center;gap:10px;">
         <span style="display:block;width:24px;height:1px;background:#C9A84C;"></span>Free Home Value Report
@@ -1143,7 +1149,7 @@
           <label style="font-size:12px;font-weight:500;color:#3A4A5C;text-transform:uppercase;letter-spacing:.06em;">Property Address</label>
           <input type="text" name="property-address" placeholder="123 Main St, Elmont, NY" required style="border:1px solid #D8DDE6;border-radius:8px;padding:12px 14px;font-size:14px;font-family:'DM Sans',sans-serif;color:#0B1C2E;outline:none;width:100%;" onfocus="this.style.borderColor='#C9A84C'" onblur="this.style.borderColor='#D8DDE6'">
         </div>
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:16px;">
+        <div id="hv-form-row" style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:16px;">
           <div style="display:flex;flex-direction:column;gap:6px;">
             <label style="font-size:12px;font-weight:500;color:#3A4A5C;text-transform:uppercase;letter-spacing:.06em;">Full Name</label>
             <input type="text" name="full-name" placeholder="Your name" required style="border:1px solid #D8DDE6;border-radius:8px;padding:12px 14px;font-size:14px;font-family:'DM Sans',sans-serif;color:#0B1C2E;outline:none;width:100%;" onfocus="this.style.borderColor='#C9A84C'" onblur="this.style.borderColor='#D8DDE6'">
