@@ -50,172 +50,491 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "RealEstateAgent",
-  "@id": "https://sawyersrealty.com/#business",
-  "name": "Sawyers Premier Realty",
-  "alternateName": "Sawyers Premier Realty Inc",
-  "url": "https://sawyersrealty.com",
-  "image": "https://sawyersrealty.com/images/index-photo-1.webp",
-  "description": "Sawyers Premier Realty is a full-service licensed real estate brokerage and certified notary public office serving Elmont, Nassau County, and Queens NY. Led by NYS Licensed Corporate Broker Sydney J. Sawyers, we specialize in residential and commercial sales, investment properties, rentals, loan modifications, and notary public services.",
-  "telephone": "+15162161394",
-  "email": "info@sawyerspremierrealty.com",
-  "foundingDate": "2014",
-  "founder": {
-    "@type": "Person",
-    "name": "Sydney J. Sawyers",
-    "@id": "https://sawyersrealty.com/about#sydney-sawyers"
-  },
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "telephone": "+1-516-216-1394",
-    "email": "info@sawyerspremierrealty.com",
-    "contactType": "customer service",
-    "areaServed": "US",
-    "availableLanguage": "English"
-  },
-  "priceRange": "$$$",
-  "currenciesAccepted": "USD",
-  "paymentAccepted": "Cash, Check, Credit Card",
-  "openingHoursSpecification": [
+  "@graph": [
     {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
-      "opens": "10:00",
-      "closes": "19:00"
-    }
-  ],
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "1389 Hempstead Turnpike, 2nd Floor",
-    "addressLocality": "Elmont",
-    "addressRegion": "NY",
-    "postalCode": "11003",
-    "addressCountry": "US"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 40.7023,
-    "longitude": -73.7257
-  },
-  "areaServed": [
-    {"@type": "City", "name": "Elmont", "sameAs": "https://en.wikipedia.org/wiki/Elmont,_New_York"},
-    {"@type": "City", "name": "Valley Stream"},
-    {"@type": "City", "name": "Hempstead"},
-    {"@type": "City", "name": "Floral Park"},
-    {"@type": "City", "name": "Franklin Square"},
-    {"@type": "City", "name": "Jamaica"},
-    {"@type": "City", "name": "Queens Village"},
-    {"@type": "City", "name": "Glen Cove"},
-    {"@type": "Borough", "name": "Queens"},
-    {"@type": "AdministrativeArea", "name": "Nassau County"}
-  ],
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "Real Estate & Notary Services",
-    "itemListElement": [
-      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Home Buying Assistance", "description": "Expert guidance for first-time buyers and seasoned investors throughout Nassau County and Queens"}},
-      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Home Selling Services", "description": "Strategic listing and marketing to sell your Elmont or Nassau County home for top dollar"}},
-      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Investment Property Sales", "description": "Off-market and listed multi-family investment properties in Queens and Nassau County"}},
-      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Rental Properties", "description": "Residential and commercial rental listings throughout Elmont and Nassau County"}},
-      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Certified Notary Public Services", "description": "Legal document notarization including deeds, mortgages, power of attorney, affidavits and more"}},
-      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Loan Modification", "description": "Foreclosure prevention and loan modification negotiation services"}},
-      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Commercial Real Estate", "description": "Commercial property sales and leasing in Elmont, Jamaica, and Nassau County"}}
-    ]
-  },
-  "employee": {
-    "@type": "Person",
-    "name": "Sydney J. Sawyers",
-    "jobTitle": "CEO & Licensed Real Estate Broker",
-    "hasCredential": [
-      {
-        "@type": "EducationalOccupationalCredential",
-        "credentialCategory": "NYS Licensed Corporate Real Estate Broker",
-        "recognizedBy": {"@type": "Organization", "name": "New York State Department of State"},
-        "identifier": "10311204920"
+      "@type": "WebSite",
+      "@id": "https://sawyersrealty.com/#website",
+      "url": "https://sawyersrealty.com/",
+      "name": "Sawyers Premier Realty",
+      "publisher": {
+        "@id": "https://sawyersrealty.com/#business"
       },
-      {
-        "@type": "EducationalOccupationalCredential",
-        "credentialCategory": "Certified Notary Public",
-        "recognizedBy": {"@type": "Organization", "name": "New York State"}
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "RealEstateAgent",
+      "@id": "https://sawyersrealty.com/#business",
+      "name": "Sawyers Premier Realty",
+      "alternateName": "Sawyers Premier Realty Inc",
+      "url": "https://sawyersrealty.com",
+      "image": "https://sawyersrealty.com/images/index-photo-1.webp",
+      "description": "Sawyers Premier Realty is a full-service licensed real estate brokerage and certified notary public office serving Elmont, Nassau County, and Queens NY. Led by NYS Licensed Corporate Broker Sydney J. Sawyers, we specialize in residential and commercial sales, investment properties, rentals, loan modifications, and notary public services.",
+      "telephone": "+15162161394",
+      "email": "info@sawyerspremierrealty.com",
+      "foundingDate": "2014",
+      "founder": {
+        "@id": "https://sawyersrealty.com/about#sydney-sawyers"
+      },
+      "employee": {
+        "@id": "https://sawyersrealty.com/about#sydney-sawyers"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+1-516-216-1394",
+        "email": "info@sawyerspremierrealty.com",
+        "contactType": "customer service",
+        "areaServed": "US",
+        "availableLanguage": "English"
+      },
+      "priceRange": "$$$",
+      "currenciesAccepted": "USD",
+      "paymentAccepted": "Cash, Check, Credit Card",
+      "hasMap": "https://www.google.com/maps?cid=2579534189457230798",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "10:00",
+          "closes": "19:00"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1389 Hempstead Turnpike, 2nd Floor",
+        "addressLocality": "Elmont",
+        "addressRegion": "NY",
+        "postalCode": "11003",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 40.7023,
+        "longitude": -73.7257
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Elmont",
+          "sameAs": "https://en.wikipedia.org/wiki/Elmont,_New_York"
+        },
+        {
+          "@type": "City",
+          "name": "Valley Stream"
+        },
+        {
+          "@type": "City",
+          "name": "Hempstead"
+        },
+        {
+          "@type": "City",
+          "name": "Floral Park"
+        },
+        {
+          "@type": "City",
+          "name": "Franklin Square"
+        },
+        {
+          "@type": "City",
+          "name": "Jamaica"
+        },
+        {
+          "@type": "City",
+          "name": "Queens Village"
+        },
+        {
+          "@type": "City",
+          "name": "Glen Cove"
+        },
+        {
+          "@type": "Borough",
+          "name": "Queens"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Nassau County"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "@id": "https://sawyersrealty.com/#services",
+        "name": "Real Estate & Notary Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://sawyersrealty.com/buy-a-home-elmont#service"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://sawyersrealty.com/sell-a-home-elmont#service"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://sawyersrealty.com/rentals-elmont#service"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://sawyersrealty.com/investment-properties-queens-nassau#service"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://sawyersrealty.com/notary#service"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://sawyersrealty.com/home-value-elmont#service"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://sawyersrealty.com/commercial-properties-elmont#service"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://sawyersrealty.com/loan-modification-elmont#service"
+            }
+          }
+        ]
+      },
+      "sameAs": [
+        "https://www.facebook.com/SawyersPremierRealty/",
+        "https://www.instagram.com/SawyersPremierRealty"
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://sawyersrealty.com/about#sydney-sawyers",
+      "name": "Sydney J. Sawyers",
+      "jobTitle": "CEO & Licensed Real Estate Broker",
+      "url": "https://sawyersrealty.com/about",
+      "worksFor": {
+        "@id": "https://sawyersrealty.com/#business"
+      },
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "NYS Licensed Corporate Real Estate Broker",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "New York State Department of State"
+          },
+          "identifier": "10311204920"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "Certified Notary Public",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "New York State"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://sawyersrealty.com/#webpage",
+      "url": "https://sawyersrealty.com/",
+      "name": "Sawyers Premier Realty | Real Estate Broker and Notary Public in Elmont, NY",
+      "description": "Licensed real estate broker and certified notary public serving Elmont, Nassau County, and Queens, NY.",
+      "isPartOf": {
+        "@id": "https://sawyersrealty.com/#website"
+      },
+      "about": {
+        "@id": "https://sawyersrealty.com/#business"
+      },
+      "mainEntity": {
+        "@id": "https://sawyersrealty.com/#business"
+      },
+      "publisher": {
+        "@id": "https://sawyersrealty.com/#business"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://sawyersrealty.com/buy-a-home-elmont#service",
+      "name": "Home Buying Assistance in Elmont, NY",
+      "serviceType": "Real Estate Buyer Representation",
+      "provider": {
+        "@id": "https://sawyersrealty.com/#business"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Elmont"
+        },
+        {
+          "@type": "City",
+          "name": "Valley Stream"
+        },
+        {
+          "@type": "City",
+          "name": "Franklin Square"
+        },
+        {
+          "@type": "City",
+          "name": "Floral Park"
+        },
+        {
+          "@type": "City",
+          "name": "Hempstead"
+        },
+        {
+          "@type": "Borough",
+          "name": "Queens"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Nassau County"
+        }
+      ],
+      "url": "https://sawyersrealty.com/buy-a-home-elmont"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://sawyersrealty.com/sell-a-home-elmont#service",
+      "name": "Home Selling Services in Elmont, NY",
+      "serviceType": "Real Estate Seller Representation",
+      "provider": {
+        "@id": "https://sawyersrealty.com/#business"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Elmont"
+        },
+        {
+          "@type": "City",
+          "name": "Valley Stream"
+        },
+        {
+          "@type": "City",
+          "name": "Franklin Square"
+        },
+        {
+          "@type": "City",
+          "name": "Floral Park"
+        },
+        {
+          "@type": "City",
+          "name": "Hempstead"
+        },
+        {
+          "@type": "Borough",
+          "name": "Queens"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Nassau County"
+        }
+      ],
+      "url": "https://sawyersrealty.com/sell-a-home-elmont"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://sawyersrealty.com/rentals-elmont#service",
+      "name": "Rental Property Services in Elmont, NY",
+      "provider": {
+        "@id": "https://sawyersrealty.com/#business"
+      },
+      "url": "https://sawyersrealty.com/rentals-elmont"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://sawyersrealty.com/investment-properties-queens-nassau#service",
+      "name": "Investment Property Sales in Queens & Nassau County",
+      "provider": {
+        "@id": "https://sawyersrealty.com/#business"
+      },
+      "url": "https://sawyersrealty.com/investment-properties-queens-nassau"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://sawyersrealty.com/notary#service",
+      "name": "Certified Notary Public Services",
+      "serviceType": "Document notarization",
+      "provider": {
+        "@id": "https://sawyersrealty.com/#business"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Elmont"
+      },
+      "url": "https://sawyersrealty.com/notary"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://sawyersrealty.com/home-value-elmont#service",
+      "name": "Elmont home valuation review",
+      "serviceType": "Comparative market analysis and home valuation",
+      "provider": {
+        "@id": "https://sawyersrealty.com/#business"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Elmont"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Nassau County"
+        },
+        {
+          "@type": "Borough",
+          "name": "Queens"
+        }
+      ],
+      "url": "https://sawyersrealty.com/home-value-elmont"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://sawyersrealty.com/commercial-properties-elmont#service",
+      "name": "Commercial Real Estate Services in Elmont, NY",
+      "serviceType": "Commercial property sales and leasing",
+      "provider": {
+        "@id": "https://sawyersrealty.com/#business"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Elmont"
+        },
+        {
+          "@type": "City",
+          "name": "Jamaica"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Nassau County"
+        },
+        {
+          "@type": "Borough",
+          "name": "Queens"
+        }
+      ],
+      "url": "https://sawyersrealty.com/commercial-properties-elmont"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://sawyersrealty.com/loan-modification-elmont#service",
+      "name": "Loan Modification & Foreclosure Prevention Assistance in Elmont, NY",
+      "serviceType": "Foreclosure prevention and loan modification support",
+      "provider": {
+        "@id": "https://sawyersrealty.com/#business"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Elmont"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Nassau County"
+        },
+        {
+          "@type": "Borough",
+          "name": "Queens"
+        }
+      ],
+      "url": "https://sawyersrealty.com/loan-modification-elmont"
+    },
+    {
+      "@type": "RealEstateListing",
+      "@id": "https://sawyersrealty.com/hollis-avenue.html#listing",
+      "name": "210-05 Hollis Avenue — 6-Unit Multi-Family Investment",
+      "description": "Exclusive off-market 6-unit multi-family investment property in Queens Village NY. 5.96% cap rate, $125,212 NOI, fully occupied, solar panels, only $1,500/yr taxes. Asking $2,100,000.",
+      "url": "https://sawyersrealty.com/hollis-avenue.html",
+      "seller": {
+        "@id": "https://sawyersrealty.com/#business"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "2100000",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "url": "https://sawyersrealty.com/hollis-avenue.html"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "210-05 Hollis Avenue",
+        "addressLocality": "Queens Village",
+        "addressRegion": "NY",
+        "postalCode": "11429",
+        "addressCountry": "US"
       }
-    ]
-  },
-  "sameAs": [
-    "https://www.facebook.com/SawyersPremierRealty/",
-    "https://www.instagram.com/SawyersPremierRealty"
+    },
+    {
+      "@type": "RealEstateListing",
+      "@id": "https://sawyersrealty.com/westland-drive.html#listing",
+      "name": "13 Westland Drive — Single Family Home, Glen Cove NY",
+      "description": "Beautiful 3BR/3BA home on East Island, Glen Cove NY. Floor-to-ceiling windows, marble fireplace, expansive deck, Long Island Sound access, NYC skyline views. Asking $1,600,000.",
+      "url": "https://sawyersrealty.com/westland-drive.html",
+      "seller": {
+        "@id": "https://sawyersrealty.com/#business"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "1600000",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "url": "https://sawyersrealty.com/westland-drive.html"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "13 Westland Drive",
+        "addressLocality": "Glen Cove",
+        "addressRegion": "NY",
+        "postalCode": "11542",
+        "addressCountry": "US"
+      }
+    },
+    {
+      "@type": "RealEstateListing",
+      "@id": "https://sawyersrealty.com/east-elmhurst.html#listing",
+      "name": "32-51 108th Street — 3-Family Triplex, East Elmhurst NY",
+      "description": "3-family triplex investment property in East Elmhurst Queens NY. 7 bedrooms, 3 bathrooms, 3 levels. Comparable sold in 19 days at $1,350,000. Asking $1,350,000.",
+      "url": "https://sawyersrealty.com/east-elmhurst.html",
+      "seller": {
+        "@id": "https://sawyersrealty.com/#business"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "1350000",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "url": "https://sawyersrealty.com/east-elmhurst.html"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "32-51 108th Street",
+        "addressLocality": "East Elmhurst",
+        "addressRegion": "NY",
+        "postalCode": "11369",
+        "addressCountry": "US"
+      }
+    }
   ]
-}
-</script>
-
-<!-- ═══ SEO: LISTING SCHEMA — HOLLIS AVENUE ═══ -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "RealEstateListing",
-  "name": "210-05 Hollis Avenue — 6-Unit Multi-Family Investment",
-  "description": "Exclusive off-market 6-unit multi-family investment property in Queens Village NY. 5.96% cap rate, $125,212 NOI, fully occupied, solar panels, only $1,500/yr taxes. Asking $2,100,000.",
-  "url": "https://sawyersrealty.com/hollis-avenue.html",
-  "offers": {
-    "@type": "Offer",
-    "price": "2100000",
-    "priceCurrency": "USD",
-    "availability": "https://schema.org/InStock"
-  },
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "210-05 Hollis Avenue",
-    "addressLocality": "Queens Village",
-    "addressRegion": "NY",
-    "postalCode": "11429"
-  }
-}
-</script>
-
-<!-- ═══ SEO: LISTING SCHEMA — WESTLAND DRIVE ═══ -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "RealEstateListing",
-  "name": "13 Westland Drive — Single Family Home, Glen Cove NY",
-  "description": "Beautiful 3BR/3BA home on East Island, Glen Cove NY. Floor-to-ceiling windows, marble fireplace, expansive deck, Long Island Sound access, NYC skyline views. Asking $1,600,000.",
-  "url": "https://sawyersrealty.com/westland-drive.html",
-  "offers": {
-    "@type": "Offer",
-    "price": "1600000",
-    "priceCurrency": "USD",
-    "availability": "https://schema.org/InStock"
-  },
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "13 Westland Drive",
-    "addressLocality": "Glen Cove",
-    "addressRegion": "NY",
-    "postalCode": "11542"
-  }
-}
-</script>
-
-<!-- ═══ SEO: LISTING SCHEMA — EAST ELMHURST ═══ -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "RealEstateListing",
-  "name": "32-51 108th Street — 3-Family Triplex, East Elmhurst NY",
-  "description": "3-family triplex investment property in East Elmhurst Queens NY. 7 bedrooms, 3 bathrooms, 3 levels. Comparable sold in 19 days at $1,350,000. Asking $1,350,000.",
-  "url": "https://sawyersrealty.com/east-elmhurst.html",
-  "offers": {
-    "@type": "Offer",
-    "price": "1350000",
-    "priceCurrency": "USD",
-    "availability": "https://schema.org/InStock"
-  },
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "32-51 108th Street",
-    "addressLocality": "East Elmhurst",
-    "addressRegion": "NY",
-    "postalCode": "11369"
-  }
 }
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -755,7 +1074,7 @@
       <div class="service-card reveal reveal-delay-2" id="sell">
         <span class="service-icon">📈</span>
         <h3>Sell Your Home</h3>
-        <p>We craft personalized strategies to get you top dollar. Our deep knowledge of the Elmont market means your property gets the attention it deserves.</p>
+        <p>We craft personalized pricing and marketing strategies. Our deep knowledge of the Elmont market means your property gets the attention it deserves.</p>
         <a href="/sell-a-home-elmont" class="service-link">Get a Free Home Valuation →</a>
       </div>
       <div class="service-card reveal reveal-delay-3" id="rent">
@@ -768,7 +1087,7 @@
         <span class="service-icon">🏢</span>
         <h3>Commercial Properties</h3>
         <p>Office spaces, retail properties, and commercial real estate for rent and sale throughout Elmont, Jamaica, and Nassau County.</p>
-        <a href="#inquiry" class="service-link">Inquire About Commercial →</a>
+        <a href="/commercial-properties-elmont" class="service-link">Inquire About Commercial →</a>
       </div>
       <div class="service-card reveal reveal-delay-2">
         <span class="service-icon">💰</span>
@@ -780,7 +1099,7 @@
         <span class="service-icon">🛡️</span>
         <h3>Loan Modification</h3>
         <p>If you're at risk of foreclosure, our experienced team negotiates with lenders on your behalf to help you stay in your home with lower, sustainable payments.</p>
-        <a href="#inquiry" class="service-link">Get Loan Modification Help →</a>
+        <a href="/loan-modification-elmont" class="service-link">Get Loan Modification Help →</a>
       </div>
     </div>
   </div>
@@ -1537,10 +1856,11 @@ calcMortgage();
         <ul class="footer-links">
           <li><a href="/buy-a-home-elmont">Buy a Home</a></li>
           <li><a href="/sell-a-home-elmont">Sell a Home</a></li>
-          <li><a href="#inquiry">Commercial Properties</a></li>
+          <li><a href="/home-value-elmont">Home Valuation</a></li>
+          <li><a href="/commercial-properties-elmont">Commercial Properties</a></li>
           <li><a href="/investment-properties-queens-nassau">Investment Properties</a></li>
           <li><a href="/rentals-elmont">Rentals</a></li>
-          <li><a href="#inquiry">Loan Modification</a></li>
+          <li><a href="/loan-modification-elmont">Loan Modification</a></li>
           <li><a href="/notary">Notary Public</a></li>
         </ul>
       </div>
