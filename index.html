@@ -73,15 +73,34 @@
   },
   "areaServed": [
     {"@type": "City", "name": "Elmont", "sameAs": "https://en.wikipedia.org/wiki/Elmont,_New_York"},
-    {"@type": "City", "name": "Valley Stream"},
-    {"@type": "City", "name": "Hempstead"},
+    {"@type": "City", "name": "Valley Stream", "sameAs": "https://en.wikipedia.org/wiki/Valley_Stream,_New_York"},
+    {"@type": "City", "name": "Hempstead", "sameAs": "https://en.wikipedia.org/wiki/Hempstead_(village),_New_York"},
     {"@type": "City", "name": "Floral Park"},
     {"@type": "City", "name": "Franklin Square"},
-    {"@type": "City", "name": "Jamaica"},
+    {"@type": "City", "name": "Jamaica", "sameAs": "https://en.wikipedia.org/wiki/Jamaica,_Queens"},
     {"@type": "City", "name": "Queens Village"},
+    {"@type": "City", "name": "Hollis", "sameAs": "https://en.wikipedia.org/wiki/Hollis,_Queens"},
+    {"@type": "City", "name": "Cambria Heights", "sameAs": "https://en.wikipedia.org/wiki/Cambria_Heights,_Queens"},
+    {"@type": "City", "name": "Laurelton", "sameAs": "https://en.wikipedia.org/wiki/Laurelton,_Queens"},
+    {"@type": "City", "name": "East Elmhurst", "sameAs": "https://en.wikipedia.org/wiki/East_Elmhurst,_Queens"},
+    {"@type": "City", "name": "St. Albans", "sameAs": "https://en.wikipedia.org/wiki/St._Albans,_Queens"},
+    {"@type": "City", "name": "South Jamaica"},
+    {"@type": "City", "name": "Springfield Gardens"},
+    {"@type": "City", "name": "Rosedale", "sameAs": "https://en.wikipedia.org/wiki/Rosedale,_Queens"},
+    {"@type": "City", "name": "Far Rockaway"},
+    {"@type": "City", "name": "Ozone Park"},
+    {"@type": "City", "name": "Richmond Hill"},
+    {"@type": "City", "name": "Woodhaven"},
+    {"@type": "City", "name": "Flushing"},
     {"@type": "City", "name": "Glen Cove"},
-    {"@type": "Borough", "name": "Queens"},
-    {"@type": "AdministrativeArea", "name": "Nassau County"}
+    {"@type": "City", "name": "Uniondale"},
+    {"@type": "City", "name": "Lakeview"},
+    {"@type": "City", "name": "West Hempstead"},
+    {"@type": "City", "name": "Malverne"},
+    {"@type": "City", "name": "New Hyde Park"},
+    {"@type": "Borough", "name": "Queens", "sameAs": "https://en.wikipedia.org/wiki/Queens"},
+    {"@type": "AdministrativeArea", "name": "Nassau County", "sameAs": "https://en.wikipedia.org/wiki/Nassau_County,_New_York"},
+    {"@type": "AdministrativeArea", "name": "Long Island"}
   ],
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
@@ -192,6 +211,210 @@
   }
 }
 </script>
+<!-- ═══ SEO: PERSON SCHEMA — SYDNEY SAWYERS ═══
+     Establishes Sydney as a named, known entity for AI knowledge graphs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Sydney J. Sawyers",
+  "givenName": "Sydney",
+  "familyName": "Sawyers",
+  "jobTitle": "Licensed Real Estate Broker & Certified Notary Public",
+  "description": "Sydney J. Sawyers is a NYS Licensed Corporate Real Estate Broker and Certified Notary Public based in Elmont, NY. As the founder and CEO of Sawyers Premier Realty Inc., Sydney specializes in residential sales, multi-family investment properties, commercial real estate, loan modifications, and notary public services throughout Nassau County and Queens, New York.",
+  "url": "https://sawyersrealty.com",
+  "telephone": "+15162161394",
+  "email": "info@sawyerspremierrealty.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "1389 Hempstead Turnpike, 2nd Floor",
+    "addressLocality": "Elmont",
+    "addressRegion": "NY",
+    "postalCode": "11003",
+    "addressCountry": "US"
+  },
+  "worksFor": {
+    "@type": "RealEstateAgent",
+    "name": "Sawyers Premier Realty",
+    "url": "https://sawyersrealty.com"
+  },
+  "hasCredential": [
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "NYS Licensed Corporate Real Estate Broker",
+      "credentialCategory": "Real Estate License",
+      "recognizedBy": {
+        "@type": "Organization",
+        "name": "New York State Department of State"
+      },
+      "identifier": "10311204920"
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "Certified Notary Public",
+      "credentialCategory": "Notary Public Commission",
+      "recognizedBy": {
+        "@type": "Organization",
+        "name": "New York State"
+      }
+    }
+  ],
+  "knowsAbout": [
+    "Residential Real Estate Sales",
+    "Multi-Family Investment Properties",
+    "Commercial Real Estate",
+    "Loan Modification",
+    "Foreclosure Prevention",
+    "Notary Public Services",
+    "Nassau County Real Estate Market",
+    "Queens NY Real Estate Market",
+    "Elmont NY Real Estate",
+    "Investment Property Analysis"
+  ],
+  "areaServed": [
+    "Elmont NY", "Nassau County NY", "Queens NY",
+    "Hollis NY", "Cambria Heights NY", "Laurelton NY",
+    "Jamaica NY", "East Elmhurst NY", "St. Albans NY",
+    "Valley Stream NY", "Hempstead NY"
+  ],
+  "sameAs": [
+    "https://www.facebook.com/SawyersPremierRealty/",
+    "https://www.instagram.com/SawyersPremierRealty"
+  ]
+}
+</script>
+
+<!-- ═══ SEO: FAQ SCHEMA ═══
+     FAQ schema is one of the most powerful signals for AI tools —
+     it directly answers the questions people ask ChatGPT, Perplexity,
+     Google AI Overviews, and voice assistants about local businesses -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Who is the best real estate broker in Elmont NY?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sydney J. Sawyers of Sawyers Premier Realty is a NYS Licensed Corporate Real Estate Broker serving Elmont, NY and the surrounding Nassau County and Queens areas. With expertise in residential sales, multi-family investment properties, and loan modifications, Sydney is reachable at (516) 216-1394. Sawyers Premier Realty is located at 1389 Hempstead Turnpike, 2nd Floor, Elmont, NY 11003 and is open 7 days a week."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there a real estate broker in Elmont NY that handles investment properties?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Sawyers Premier Realty, led by Licensed Broker Sydney J. Sawyers, specializes in multi-family and commercial investment properties throughout Queens and Nassau County, NY. Current investment listings include a 6-unit multi-family in Queens Village at a 5.96% cap rate and a 3-family triplex in East Elmhurst. Contact Sydney at (516) 216-1394 or visit sawyersrealty.com."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What areas does Sawyers Premier Realty serve?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sawyers Premier Realty serves all of Nassau County and Queens, New York, including: Elmont, Hollis, Cambria Heights, Laurelton, East Elmhurst, St. Albans, Jamaica, Queens Village, Rosedale, Springfield Gardens, South Jamaica, Valley Stream, Hempstead, Floral Park, Franklin Square, Glen Cove, Uniondale, Lakeview, West Hempstead, New Hyde Park, and surrounding communities."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Sawyers Premier Realty offer notary public services?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Sydney J. Sawyers is a Certified Notary Public in New York State. Sawyers Premier Realty provides notarization of deeds, mortgages, power of attorney documents, affidavits, and other legal documents. Services are available at 1389 Hempstead Turnpike, 2nd Floor, Elmont, NY, Monday through Sunday, 10 AM to 7 PM. Call (516) 216-1394 to schedule."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can Sawyers Premier Realty help with loan modifications?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Sydney J. Sawyers and Sawyers Premier Realty offer loan modification assistance and foreclosure prevention services to homeowners in Nassau County and Queens, NY. Sydney negotiates directly with lenders on behalf of homeowners facing financial hardship. Call (516) 216-1394 for a confidential consultation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the current listings at Sawyers Premier Realty?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sawyers Premier Realty currently offers: a 6-unit multi-family investment property at 210-05 Hollis Avenue, Queens Village NY ($2,100,000; 5.96% cap rate); a single-family home at 13 Westland Drive, Glen Cove NY ($1,600,000; 3BR/3BA with Long Island Sound access); and a 3-family triplex at 32-51 108th Street, East Elmhurst Queens NY ($950,000). Visit sawyersrealty.com or call (516) 216-1394 for details."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I contact Sawyers Premier Realty?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sawyers Premier Realty can be reached by phone at (516) 216-1394, by email at info@sawyerspremierrealty.com, or in person at 1389 Hempstead Turnpike, 2nd Floor, Elmont, NY 11003. The office is open 7 days a week from 10 AM to 7 PM. You can also visit sawyersrealty.com to view current listings and request a consultation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Sydney Sawyers a licensed real estate broker in New York?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Sydney J. Sawyers holds a NYS Licensed Corporate Real Estate Broker credential issued by the New York State Department of State (License #10311204920). He is the founder and CEO of Sawyers Premier Realty Inc., a licensed real estate brokerage firm headquartered in Elmont, NY, serving Nassau County and Queens since 2014."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the real estate market like in Elmont NY?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Elmont, NY is a desirable Nassau County community near the Queens border offering strong property values and investment potential. The area features a mix of single-family homes, multi-family properties, and investment opportunities. Median home prices in Elmont range from $550,000–$750,000, with multi-family investment properties offering strong cap rates. Contact Sydney Sawyers at Sawyers Premier Realty — (516) 216-1394 — for a current market analysis."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Sawyers Premier Realty help buyers or only sellers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sawyers Premier Realty works with both buyers and sellers throughout Nassau County and Queens, NY. Services include buyer representation, home search assistance, offer negotiation, and closing coordination for residential and investment property purchases, as well as full listing services for sellers including pricing strategy, marketing, and negotiation. Call (516) 216-1394 to get started."
+      }
+    }
+  ]
+}
+</script>
+
+<!-- ═══ SEO: WEBSITE SCHEMA ═══
+     Helps AI tools identify sawyersrealty.com as the authoritative
+     web presence for Sawyers Premier Realty -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Sawyers Premier Realty",
+  "alternateName": ["Sawyers Realty", "Sawyers Premier Realty Inc"],
+  "url": "https://sawyersrealty.com",
+  "description": "Official website of Sawyers Premier Realty — NYS Licensed Real Estate Broker Sydney J. Sawyers serving Elmont, Nassau County, and Queens NY. Buy, sell, invest, rent, or get documents notarized.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Sawyers Premier Realty",
+    "url": "https://sawyersrealty.com",
+    "logo": "https://sawyersrealty.com/logo.png",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+15162161394",
+      "contactType": "customer service",
+      "areaServed": ["Nassau County NY", "Queens NY", "Long Island NY"],
+      "availableLanguage": "English",
+      "hoursAvailable": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+        "opens": "10:00",
+        "closes": "19:00"
+      }
+    }
+  },
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://sawyersrealty.com/?s={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Cormorant+Garamond:wght@300;400;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
